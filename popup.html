@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Roaster</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup">
+  <div class="popup-inner">
+    <div id="loading" class="popup-loading">
+      <div class="spinner"></div>
+      <span>Judging your history…</span>
+    </div>
+
+    <div id="content" class="hidden">
+      <div class="archetype-title" id="archetype-title"></div>
+      <div class="archetype-blurb" id="archetype-blurb"></div>
+      <ul class="roast-lines" id="roast-lines"></ul>
+      <a href="report.html" target="_blank" class="full-roast-btn">Full roast →</a>
+    </div>
+
+    <div id="empty" class="empty-state hidden">
+      <p>Not enough browsing history yet.<br>Come back after you've been on the internet a bit.</p>
+    </div>
+
+    <div id="error" class="empty-state hidden">
+      <p style="color:var(--accent2)">Something went wrong.<br>
+      <small id="error-msg" style="font-family:var(--mono);font-size:11px;opacity:0.7"></small></p>
+      <p style="margin-top:8px;font-size:11px">Right-click this popup → <strong>Inspect</strong> → Console for details.</p>
+    </div>
+  </div>
+
+  <script src="analyze.js"></script>
+  <script src="roast.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

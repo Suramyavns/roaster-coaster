@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Roaster — Full Report</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="report">
+
+  <div id="report-loading" class="report-loading">
+    <div class="spinner"></div>
+    <span>Running deep analysis on your poor life choices…</span>
+  </div>
+
+  <div id="report-content" class="hidden">
+
+    <!-- Hero -->
+    <header class="report-header section">
+      <div class="report-label">Your browsing personality</div>
+      <h1 class="report-archetype-title" id="report-archetype-title"></h1>
+      <p class="report-blurb" id="report-blurb"></p>
+    </header>
+
+    <!-- Time window selector -->
+    <div class="window-selector" id="window-selector">
+      <button class="window-btn" data-days="7">7 days</button>
+      <button class="window-btn active" data-days="30">30 days</button>
+      <button class="window-btn" data-days="90">90 days</button>
+      <button class="window-btn" data-days="365">1 year</button>
+    </div>
+
+    <!-- Hour chart -->
+    <section class="section">
+      <div class="section-title">Browsing by hour of day</div>
+      <div class="hour-chart" id="hour-chart"></div>
+    </section>
+
+    <!-- Stat cards -->
+    <section class="section">
+      <div class="section-title">By the numbers</div>
+      <div class="cards-grid" id="stat-cards"></div>
+    </section>
+
+    <!-- Top domains -->
+    <section class="section">
+      <div class="section-title">Top domains</div>
+      <ul class="domain-list" id="top-domains"></ul>
+    </section>
+
+    <!-- Top revisited URLs -->
+    <section class="section">
+      <div class="section-title">Pages you can't stop visiting</div>
+      <ul class="url-list" id="top-urls"></ul>
+    </section>
+
+    <!-- Search queries -->
+    <section class="section" id="search-section">
+      <div class="section-title">What you asked the internet</div>
+      <ul class="query-list" id="search-queries"></ul>
+    </section>
+
+    <!-- Full roast -->
+    <section class="section">
+      <div class="section-title">Your full roast</div>
+      <ul class="full-roast-list" id="full-roast"></ul>
+    </section>
+
+  </div>
+
+  <div id="report-empty" class="report-empty hidden">
+    <p>Not enough browsing history to roast you properly.<br>
+    Go browse some things and come back.</p>
+  </div>
+
+  <script src="analyze.js"></script>
+  <script src="roast.js"></script>
+  <script src="report.js"></script>
+</body>
+</html>
