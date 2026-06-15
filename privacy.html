@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Roast My Browsing History</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 24px;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.8rem; margin-bottom: 4px; }
+    h2 { font-size: 1.1rem; margin-top: 36px; }
+    p, li { font-size: 0.97rem; color: #333; }
+    ul { padding-left: 20px; }
+    .meta { color: #888; font-size: 0.85rem; margin-bottom: 40px; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 40px 0; }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Roast My Browsing History &mdash; Last updated: June 15, 2025</p>
+
+  <h2>Overview</h2>
+  <p>
+    Roast My Browsing History is a Chrome extension that analyzes your local browser history
+    to generate a humorous, personalized report about your browsing habits.
+    <strong>All processing happens entirely on your device.</strong>
+    No data is collected, transmitted, or stored by us at any point.
+  </p>
+
+  <h2>What data is accessed</h2>
+  <p>
+    The extension requests the <code>history</code> browser permission in order to read your
+    local browsing history using Chrome's built-in <code>chrome.history</code> API. Specifically,
+    it reads:
+  </p>
+  <ul>
+    <li>URLs and page titles of recently visited pages</li>
+    <li>Visit timestamps and visit counts</li>
+    <li>Navigation transition types (e.g. typed, link, reload)</li>
+  </ul>
+  <p>
+    This data is used solely to compute on-device metrics — such as top visited domains,
+    peak browsing hours, session lengths, and search query topics — that power the roast report
+    displayed to you.
+  </p>
+
+  <h2>What we do NOT do</h2>
+  <ul>
+    <li>We do not transmit any browsing history or derived data to any server.</li>
+    <li>We do not store any data beyond the current browser session.</li>
+    <li>We do not use cookies, local storage, or any other persistence mechanism.</li>
+    <li>We do not include any third-party analytics, tracking, or advertising.</li>
+    <li>We do not share any information with third parties.</li>
+  </ul>
+
+  <h2>Data retention</h2>
+  <p>
+    No data is retained. Every time you open the extension, it reads your history fresh,
+    computes the report in memory, and displays it. When you close the popup or report tab,
+    all computed data is discarded.
+  </p>
+
+  <h2>Third-party services</h2>
+  <p>
+    This extension does not communicate with any external services, APIs, or servers.
+    It operates fully offline after installation.
+  </p>
+
+  <h2>Children's privacy</h2>
+  <p>
+    This extension is not directed at children under 13 and does not knowingly collect
+    any information from them.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes in a future version of the extension, the updated policy will
+    be published at this URL and the "Last updated" date above will be revised.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    For questions about this privacy policy, please open an issue on the
+    <a href="https://github.com/Suramyavns/roaster-coaster" target="_blank" rel="noopener">
+      GitHub repository
+    </a>.
+  </p>
+
+  <hr />
+  <p style="font-size:0.8rem; color:#aaa;">
+    Roast My Browsing History is an open-source Chrome extension. Your data stays yours.
+  </p>
+
+</body>
+</html>
