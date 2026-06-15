@@ -32,6 +32,8 @@ Place your own `icons/icon16.png`, `icons/icon48.png`, and `icons/icon128.png` b
 - **Only the `history` permission** is requested — no `tabs`, no `cookies`, no `webRequest`.
 - History is fetched locally from Chrome's built-in history database and never transmitted.
 
+Full privacy policy: [https://suramyavns.github.io/roaster-coaster/privacy.html](https://suramyavns.github.io/roaster-coaster/privacy.html)
+
 ## File structure
 
 ```
